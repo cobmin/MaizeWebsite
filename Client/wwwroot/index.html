@@ -4,7 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azure Static Web Apps Blazor Sample</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Maize: Read to Succeed 2023 @Model.SiteName" />
+    <meta property="og:url" content="https://maizehelps.art" />
+    <meta property="og:image" content="images/Logo.png">
+    <meta property="og:image:height" content="384" />
+    <meta property="og:image:width" content="384" />
+    <meta property="og:site_name" content="@Model.SiteName" />
+    <meta property="og:description" content="@Model.PageDescription" />
+    <meta name="twitter:site" content="maize_capp" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="@Model.PageDescription" />
+    <meta name="twitter:title" content="Maize: Read to Succeed 2023 @Model.SiteName" />
+    <meta name="twitter:label1" content="Created by">
+    <meta name="twitter:data1" content="cobmin">
+    <meta name="twitter:label2" content="read time..." />
+    <title>Maize: Read to Succeed</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
@@ -12,10 +27,22 @@
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div id="app">
+        <!-- Spinner -->
+        <div class="spinner d-flex align-items-center justify-content-center" style="position:absolute; width: 100%; height: 100%; background: #d3d3d39c; left: 0; top: 0; border-radius: 10px;">
+            <div class="spinner-border text-success" role="status">
+                <span class="sr-only">Growing...</span>
+            </div>
+        </div>
+    </div>
 
     <div id="blazor-error-ui">
-        An unhandled error has occurred.
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
