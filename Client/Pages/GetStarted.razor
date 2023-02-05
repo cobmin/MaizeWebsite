@@ -4,28 +4,60 @@
 
 <h1 class="border-bottom">Get Started</h1>
 <p>Overview on setting up Maize's console application</p>
-<div class="list-group mb-2">
-    <div class="list-group-item bg-light aria-current="true">
+<div class="list-group mb-3">
+    <div class="list-group-item bg-light" >
     <div class="d-flex w-100 justify-content-between">
-            <h5 class="border-bottom mb-1">Requirements</h5>
+            <h4 class="border-bottom mb-1">Requirements</h4>
     </div>
-    <p class="mb-0">1. Gamestop or MetaMask wallet with an active <a href="https://loopring.io/#/trade/lite/LRC-ETH" target="_blank">Loopring</a> account: <a href="https://wallet.gamestop.com/" target="_blank"><small>Download</small></a></p>
-        <p class="mb-0">2. Own Maize Origin Logo (not required for testnet): <a  href="https://loopexchange.art/collection/maizeorigin/item/0xdf3ce39ffe0366822b9ea52000ba23a8fe5c64832d310c06f76447b7330d531a" target="_blank"><small>Purchase</small></a></p>
-        <p class="mb-0">3. The Maize application for your operating system: <a href="https://github.com/cobmin/Maize/releases" target="_blank"><small>Download</small></a></p>
-        <img class="img-fluid mt-1" src="images/GitHubDownload.png" alt="">
+        <p class="mb-0"><input type="checkbox"> Gamestop or MetaMask wallet with an active <a href="https://loopring.io/#/trade/lite/LRC-ETH" target="_blank">Loopring</a> account: <a href="https://wallet.gamestop.com/" target="_blank"><small>Download</small></a></p>
+        
+        <p class="mb-0"><input type="checkbox"> Own Maize Origin Logo (not required for testnet): <a href="https://loopexchange.art/collection/maizeorigin/item/0xdf3ce39ffe0366822b9ea52000ba23a8fe5c64832d310c06f76447b7330d531a" target="_blank"><small>Purchase</small></a></p>
+        <p class="mb-0"><input type="checkbox"> The Maize application for your operating system: <a href="https://github.com/cobmin/Maize/releases" target="_blank"><small>Download</small></a></p>
+        <img class="img-fluid mb-2" src="images/GitHubDownload.png" alt="">
     </div>
 </div>
 
 <div class="list-group mb-2">
-    <div class="list-group-item bg-light" aria-current="true">
+    <div class="list-group-item bg-light" >
     <div class="d-flex w-100 justify-content-between">
-        <h5 class="border-bottom mb-1">Installation</h5>
+        <h4 class="border-bottom mb-1">Installation</h4>
     </div>
-        <div class="tutorial container text-center ratio ratio-16x9 mb-1">
+        <div class="tutorial container text-center ratio ratio-16x9 mb-2">
             <iframe src="https://www.youtube.com/embed/00TY9aHTUuE?rel=0"
                     allowfullscreen>
             </iframe>
         </div>
-        @*<p class ="mb-1">Extract the zip file from the </p>*@
+        <p class="mb-0"><input type="checkbox"> Save the Maize folder somewhere convenient and click into the Maize folder. <small>You should see a few files and the Maize executable.*</small></p>
+        <p class="mb-3"><input type="checkbox"> Open mainnetappsettings.json and log into <a href="https://loopring.io/#/trade/lite/LRC-ETH" target="_blank">loopring.io</a></p>
+        <p class="mb-3 alert alert-danger"><b>DO NOT SHARE API OR PRIVATE KEYS</b></p>
+        <p class="mb-3"><input type="checkbox"> In loopring.io, click on the Avatar > Security > Export Account.</p>
+        <h5 class="mb-2">Place the necessary Loopring L2 values into the mainnetappsettings.json</h5>
+        <p class="mb-0"><input type="checkbox"> apiKey = LoopringApiKey</p>
+        <p class="mb-0"><input type="checkbox"> privateKey = LoopringPrivateKey</p>
+        <p class="mb-0"><input type="checkbox"> address = LoopringAddress</p>
+        <p class="mb-3"><input type="checkbox"> accountId = LoopringAccountId</p>
+        <h5 class="mb-0">Find the Layer 1 private key.</h5>
+        <p class="mb-0">- GameStop: Avatar > Settings > Export Private Key</p>
+        <p class="mb-2">- MetaMask: ... > Account Details > Export Private Key</p>
+        <p class="mb-0"><input type="checkbox"> This is the value for MMorGMEPrivateKey.</p>
+        <p class="mb-3"><input type="checkbox"> Same steps apply for testnetappsettings.json but connect to the Goerli testnet in your wallet</p>
+        <p class="mb-3 alert alert-success">Start Maize by opening the Maize.exe.</p>
+        <div class="border">
+            <small>*macOS users: Run the following command to turn the Maize file into an executable. You may also need to add it as a trusted application if it gets blocked from running: Settings > Security & Privacy.</small>
+        <i class="">chmod +x Maize</i>
+        </div>
+    </div>
+</div>
+
+<div class="list-group mb-2">
+    <div class="list-group-item bg-light">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="border-bottom mb-1">Performing an Airdrop</h5>
+        </div>
+        <div class="tutorial container text-center ratio ratio-16x9 mb-2">
+            <iframe src="https://www.youtube.com/embed/aKPs32VIQQE?rel=0"
+                    allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </div>
