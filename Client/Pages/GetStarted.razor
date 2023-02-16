@@ -10,7 +10,8 @@
             <h3 class="border-bottom mb-1">Requirements</h3>
     </div>
         <p class="mb-0"><input type="checkbox"> Gamestop or MetaMask wallet with an active <a href="https://loopring.io/#/trade/lite/LRC-ETH" target="_blank">Loopring</a> account: <a href="https://wallet.gamestop.com/" target="_blank"><small>Download</small></a></p>
-        
+        <p class="mb-0"><input type="checkbox"> Pinata account: <a href="https://app.pinata.cloud/register" target="_blank"><small>Sign up</small></a></p>
+        <p class="mb-0"><input type="checkbox"> Nft.Storage account: <a href="https://nft.storage/login/" target="_blank"><small>Sign up</small></a></p>
         <p class="mb-0"><input type="checkbox"> Own Maize Origin Logo (not required for testnet): <a href="https://loopexchange.art/collection/maizeorigin/item/0xdf3ce39ffe0366822b9ea52000ba23a8fe5c64832d310c06f76447b7330d531a" target="_blank"><small>Purchase</small></a></p>
         <p class="mb-3"><input type="checkbox"> The Maize application for your operating system: <a href="https://github.com/cobmin/Maize/releases" target="_blank"><small>Download</small></a></p>
         <img class="img-fluid mb-2" src="images/GitHubDownload.png" alt="">
@@ -27,21 +28,33 @@
                     allowfullscreen>
             </iframe>
         </div>
-        <p class="mb-0"><input type="checkbox"> Save the Maize folder somewhere convenient and click into the Maize folder. <small>You should see a few files and the Maize executable.*</small></p>
-        <p class="mb-3"><input type="checkbox"> Open mainnetappsettings.json and log into <a href="https://loopring.io/#/trade/lite/LRC-ETH" target="_blank">loopring.io</a></p>
+        <p class="mb-0"><input type="checkbox"> Save the Maize folder somewhere convenient and select into the Maize folder. <small>You should see two folders and the Maize executable.*</small></p>
+        <p class="mb-3"><input type="checkbox"> Open mainnetappsettings.json in .\Input\Environment</p>
         <p class="mb-3 alert alert-danger"><b>DO NOT SHARE API OR PRIVATE KEYS</b></p>
-        <p class="mb-3"><input type="checkbox"> In loopring.io, click on the Avatar > Security > Export Account.</p>
-        <h5 class="mb-2">Place the necessary Loopring L2 values into the mainnetappsettings.json</h5>
+        <h5 class="border-bottom mb-2">Find Loopring L2 values for mainnetappsettings.json</h5>
+        <p class="mb-0"><input type="checkbox"> Log into <a href="https://loopring.io/#/trade/lite/LRC-ETH" target="_blank">loopring.io</a> > select the Avatar > Security > Export Account.</p>
         <p class="mb-0"><input type="checkbox"> apiKey = LoopringApiKey</p>
         <p class="mb-0"><input type="checkbox"> privateKey = LoopringPrivateKey</p>
         <p class="mb-0"><input type="checkbox"> address = LoopringAddress</p>
         <p class="mb-3"><input type="checkbox"> accountId = LoopringAccountId</p>
-        <h5 class="mb-0">Find the Layer 1 private key.</h5>
-        <p class="mb-0">- GameStop: Avatar > Settings > Export Private Key</p>
-        <p class="mb-2">- MetaMask: ... > Account Details > Export Private Key</p>
-        <p class="mb-0"><input type="checkbox"> Value = MMorGMEPrivateKey.</p>
-        <p class="mb-3"><input type="checkbox"> Same steps apply for testnetappsettings.json but connect to the Goerli testnet in your wallet</p>
-        <p class="mb-3 alert alert-success">Start Maize by opening the Maize.exe.</p>
+        <h5 class="border-bottom mb-0">Find the Layer 1 private key.</h5>
+        <p class="mb-0">- GameStop Wallet: Avatar > Settings > Export Private Key</p>
+        <p class="mb-1">- MetaMask Wallet: ... > Account Details > Export Private Key</p>
+        <p class="mb-3"><input type="checkbox"> Value = MMorGMEPrivateKey.</p>
+        <h5 class="border-bottom mb-0">Obtain Pinata Jwt</h5>
+        <p class="mb-0">- Log into <a href="https://app.pinata.cloud" target="_blank">Pinata</a>.</p>
+        <p class="mb-0">- Go to the developers tab and under Api Keys select + New Key.</p>
+        <p class="mb-0">- Select Admin > name your Key > select Create Key.</p>
+        <p class="mb-1">- Save all Api Key Info somewhere safe.</p>
+        <p class="mb-3"><input type="checkbox"> JWT = pinataJwt.</p>
+        <h5 class="border-bottom mb-0">Obtain Nft.Storage Api Key</h5>
+        <p class="mb-0">- Log into <a href="https://nft.storage/" target="_blank">Nft.Storage</a>.</p>
+        <p class="mb-0">- Select API Keys tab > + New Key.</p>
+        <p class="mb-0">- Name your Key > select Create.</p>
+        <p class="mb-1">- Select Actions > Copy.</p>
+        <p class="mb-2"><input type="checkbox"> Key = nftStorageApiKey.</p>
+        <p class="mb-3"><input type="checkbox"> Same steps apply for testnetappsettings.json but connect to the <NavLink href="testnet">Goerli testnet</NavLink> in your wallet. Pinata and Nft.Storage will be the same.</p>
+        <p class="mb-3 alert alert-success">Start Maize by selecting the Maize.exe. Check out tutorials <NavLink href="tutorials">here</NavLink>. </p>
         <p class="mb-2 p-2 border rounded">*macOS users: Run the following command to turn the Maize file into an executable. You may also need to add it as a trusted application if it gets blocked from running: Settings > Security & Privacy.<br /><i>chmod +x Maize</i></p>
         
     </div>
